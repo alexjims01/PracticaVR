@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LeftHandAnimatorController
+  m_Name: RightHandAnimatorController 1
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Grip
@@ -65,7 +65,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: 57f92d2472b52ad4d993cd7f0651015d, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: 09610df1672b85c4e8bf80b3f68091e4, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -73,7 +73,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: 3c25de0832f926643a7d724e184fb200, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: ad2c46be81b28924c9ae40d75366e9cd, type: 3}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -81,7 +81,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: a609808c9f50bbc4595cc8d564bc339c, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: 58bc37a55f1aab948960c2bbc38618c2, type: 3}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -89,7 +89,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: a609808c9f50bbc4595cc8d564bc339c, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: 58bc37a55f1aab948960c2bbc38618c2, type: 3}
     m_Threshold: 1
     m_Position: {x: 1, y: 1}
     m_TimeScale: 1
