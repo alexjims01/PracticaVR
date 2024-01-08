@@ -5,6 +5,16 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     [SerializeField] private Animator animacionEnemigo;
+    private GameManager script;
+
+    void Start()
+    {
+        GameObject gameManager = GameObject.Find("GameManager");
+        if (gameManager != null)
+        {
+            script = gameManager.GetComponent<GameManager>();
+        }
+    }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -12,6 +22,7 @@ public class Enemigo : MonoBehaviour
         {
             animacionEnemigo.SetTrigger("Morir");
             GetComponent<BoxCollider>().enabled = false;
+            script.EnemigoEliminado();
         }
     }
 

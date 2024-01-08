@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmpezarPartida : MonoBehaviour
+public class RestartNivel : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemigos;
 
@@ -25,11 +25,7 @@ public class EmpezarPartida : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            foreach(GameObject enemigo in enemigos)
-            {
-                enemigo.GetComponent<Enemigo>().ActivarEnemigo();
-            }
-            script.SpawnActivado();
+            script.ReiniciarNivel();
         }
     }
 }
